@@ -1,0 +1,183 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity $animation-duration
+	$animation-timing-function,
+		 visibility $animation-duration $animation-timing-function;
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0.7);
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 528px;
+	height: 581px;
+	padding: 40px;
+	background-color: $text-color-on-dark;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform $animation-duration
+	$animation-timing-function;
+	.is-hidden & {
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+}
+.modal-title {
+	margin-bottom: 12px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+	color: $title-text-color;
+}
+.label {
+	margin-bottom: 10px;
+	display: block;
+}
+.modal-form-lable {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.167;
+	letter-spacing: 0.01em;
+	color: $color-text-description;
+}
+.input-group-absolute {
+	position: relative;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.modal-form-input {
+	padding: 11px 0px 11px 42px;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition: border $animation-duration
+	$animation-timing-function;
+	.input-group-absolute:focus-within > & {
+		outline: none;
+		border-color: $accent-color;
+	}
+}
+.modal-icon {
+	position: absolute;
+	display: inline-block;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	fill: $primary-text-color;
+	transition: fill $animation-duration $animation-timing-function;
+	.input-group-absolute:focus-within > & {
+		outline: none;
+		fill: $accent-color;
+	}
+}
+
+.form-text-area {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.comment-area {
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+.form-comment {
+	padding: 12px 16px;
+	margin-top: 4px;
+	height: 120px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	resize: none;
+	transition: border $animation-duration
+	$animation-timing-function,
+		 color $animation-duration $animation-timing-function;
+		 &:focus {
+			outline: none;
+			border: 1px solid $accent-color;
+		}
+		&::placeholder {
+			font-size: 12px;
+			line-height: 1.14;
+			letter-spacing: 0.01em;
+			color: rgba(117, 117, 117, 0.5);
+		}	
+}
+
+.checkbox-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $color-text-description;
+}
+.ticks-icon {
+	display: flex;
+	margin-right: 8px;
+	width: 16px;
+	height: 15px;
+	border: 2px solid $primary-text-color;
+	border-radius: 2px;
+	cursor: pointer;
+	.checkbox:checked + & {
+		background-origin: border-box;
+		background-color: var(--accent-color);
+		background-image: url(./images/icons.svg#icon-tick);
+		background-size: contain;
+		border-color: $accent-color;
+	}
+}
+
+.checkbox-link {
+	text-decoration-line: underline;
+	color: $accent-color;
+}
+.button-submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	border-radius: 50%;
+	background: transparent;
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: fill $animation-duration $animation-timing-function;
+	&:hover {
+		fill: $accent-color;
+	}
+}
+

@@ -1,0 +1,120 @@
+
+footer {
+	background-color: $bg-color-section;
+	padding: 60px 0;
+}
+
+address {
+	font-style: normal;
+	margin-top: 20px;
+}
+.address-item:not(:last-child) {
+	margin-bottom: 9px;
+}
+.address-link {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: $text-color-on-dark;
+	&:hover,
+	&:focus {
+	color: $accent-color;
+}
+}
+
+.footer-contacts {
+	margin-right: 70px;
+}
+.footer-contact-link {
+	display: block;
+	letter-spacing: 0.03em;
+	color: $color-text-description;
+}
+.address-link {
+	color: $bg-color-team;
+	transition: color $animation-duration $animation-timing-function;
+}
+.footer-list-text {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $text-color-on-dark;
+}
+.footer-list:not(:last-child) {
+	margin-right: 10px;
+}
+.footer-objects {
+	display: flex;
+	align-items: baseline;
+}
+.footer-icons-position {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-icon {
+	transition: fill $animation-duration $animation-timing-function;
+	&:hover,
+	&:focus {
+	fill: $bg-color-team;
+}
+}
+
+.dark.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	fill: $text-color-on-dark;
+	border-radius: 50%;
+	background-color: $footer-social;
+	transition: background-color $animation-duration
+	$animation-timing-function;
+	&:hover,
+	&:focus {
+	background-color: $accent-color;
+}
+}
+.form-area {
+	display: flex;
+}
+
+.email-form {
+	margin-right: 12px;
+}
+.email-form-field {
+	margin-left: auto;
+}
+.form-field {
+	padding: 15px 16px;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	& input::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+
+.down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 29px;
+	margin-left: 12px;
+}
+.send-icon {
+	margin-left: 10px;
+	fill: $text-color-on-dark;
+	width: 24px;
+	height: 24px;
+}
