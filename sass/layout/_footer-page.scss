@@ -8,10 +8,10 @@ address {
 	font-style: normal;
 	margin-top: 20px;
 }
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
 	margin-bottom: 9px;
 }
-.address-link {
+.address__link {
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
@@ -22,19 +22,19 @@ address {
 }
 }
 
-.footer-contacts {
+.footer__contacts {
 	margin-right: 70px;
 }
-.footer-contact-link {
+.footer__contacts--link {
 	display: block;
 	letter-spacing: 0.03em;
 	color: $color-text-description;
 }
-.address-link {
+.address__link {
 	color: $bg-color-team;
 	transition: color $animation-duration $animation-timing-function;
 }
-.footer-list-text {
+.footer__title {
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
@@ -43,19 +43,17 @@ address {
 	text-transform: uppercase;
 	color: $text-color-on-dark;
 }
-.footer-list:not(:last-child) {
+.footer__item:not(:last-child) {
 	margin-right: 10px;
 }
-.footer-objects {
+.footer__objects {
 	display: flex;
 	align-items: baseline;
 }
-.footer-icons-position {
+.footer__icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.footer-icon {
 	transition: fill $animation-duration $animation-timing-function;
 	&:hover,
 	&:focus {
@@ -63,7 +61,7 @@ address {
 }
 }
 
-.dark.social-links {
+.footer__social.social__links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -74,22 +72,17 @@ address {
 	background-color: $footer-social;
 	transition: background-color $animation-duration
 	$animation-timing-function;
-	&:hover,
-	&:focus {
-	background-color: $accent-color;
 }
+.footer__social:hover,
+.footer__social:focus {
+	background-color: var(--accent-color);
 }
-.form-area {
+.email-form__area {
 	display: flex;
-}
-
-.email-form {
 	margin-right: 12px;
 }
-.email-form-field {
+.email-form__field {
 	margin-left: auto;
-}
-.form-field {
 	padding: 15px 16px;
 	width: 358px;
 	height: 50px;
@@ -105,14 +98,14 @@ address {
 	}
 }
 
-.down {
+.footer__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px 29px;
 	margin-left: 12px;
 }
-.send-icon {
+.email-icon{
 	margin-left: 10px;
 	fill: $text-color-on-dark;
 	width: 24px;

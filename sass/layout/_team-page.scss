@@ -1,10 +1,10 @@
-.team-list {
+.team__list {
 	display: flex;
 }
 .team {
 	background-color: $bg-color-team;
 }
-.team-item {
+.team__item {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
@@ -13,43 +13,42 @@
 	}
 }
 
-.specialist-title {
+.specialist__card {
 	font-size: 16px;
 	line-height: 1.18;
 	font-weight: 500;
 	letter-spacing: 0.03em;
 	color: $title-text-color;
 	margin-bottom: 10px;
+	text-align: center;
+	padding: 30px 0;
 }
-.specialist-description {
+.specialist__name {
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
 	color: $color-text-description;
 }
-.specialist-item {
-	text-align: center;
-	padding: 30px 0;
-}
-.specialist-description {
+
+.specialist__post {
 	font-size: 16px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: $color-text-description;
 	margin-bottom: 16px;
 }
-.specialist-social {
+.social {
 	display: inline-flex;
 	align-content: center;
 }
-.social-links {
+.social__links {
 	width: 44px;
 	height: 44px;
 	&:not(:last-child) {
 		margin-right: 10px;
 	}
 }
-.specialist-icon-back {
+.social__image {
 	display: flex;
 	align-items: center;
 	width: 100%;

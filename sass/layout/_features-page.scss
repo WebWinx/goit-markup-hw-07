@@ -1,18 +1,18 @@
 .features {
 	padding-bottom: 0;
 }
-.features-list {
+.features__list {
 	display: flex;
 }
 
-.features-item {
+.features__item {
 	width: 270px;
 	&:not(:last-child) {
 		margin-right: 30px;
 	}
 }
 
-.features-title {
+.features__title {
 	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 1.14;
@@ -20,13 +20,13 @@
 	text-transform: uppercase;
 	color: $title-text-color;
 }
-.features-description {
+.features__description {
 	color: $color-text-description;
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	line-height: 1.7;
 }
-.features-icon-back {
+.features__image {
 	display: flex;
 	justify-content: center;
 	align-items: center;

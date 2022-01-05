@@ -15,6 +15,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"/>
 		  <link rel="stylesheet" href="./css/style.css"/>
+		  <link rel="stylesheet" href="./css/main.min.css"/>
     </head>
     <body>
         <header>
@@ -215,7 +216,7 @@
                                             <svg
                                                 width="20"
                                                 height="20"
-                                                class="social-icon">
+                                                class="social__icon">
                                                 <use
                                                     href="./images/icons.svg#icon-instagram"></use>
                                             </svg>
@@ -247,7 +248,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="social-links">
+                                    <li class="social__links">
                                         <a
                                             href="https://www.linkedin.com/"
                                             class="social__image">
@@ -660,33 +661,33 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <h3 class="modal-title">
+                <h3 class="modal__title">
                     Оставьте свои данные, мы вам перезвоним
                 </h3>
-                <form action="#" class="modal-form">
+                <form action="#" class="modal__form">
                     <div class="label">
-                        <label class="modal-form-lable">Имя</label>
+                        <label class="modal__form--label">Имя</label>
                     </div>
-                    <div class="input-group-absolute">
+                    <div class="input__group">
                         <input
                             type="text"
                             name="name"
-                            class="modal-form-input"/>
-                        <svg width="18" height="18" class="modal-icon">
+                            class="modal__form--input"/>
+                        <svg width="18" height="18" class="modal__icon">
                             <use
                                 href="./images/icons.svg#icon-person-black">
 									</use>
                         </svg>
                     </div>
                     <div class="label">
-                        <label class="modal-form-lable">Телефон</label>
+                        <label class="modal__form--label">Телефон</label>
                     </div>
-                    <div class="input-group-absolute">
+                    <div class="input__group">
                         <input
                             type="tel"
                             name="phone_number"
-                            class="modal-form-input"/>
-                        <svg width="18" height="18" class="modal-icon">
+                            class="modal__form--input"/>
+                        <svg width="18" height="18" class="modal__icon">
                             <use
                                 href="./images/icons.svg#icon-phone-black">
 									</use>
@@ -694,50 +695,50 @@
                     </div>
 
                     <div class="label">
-                        <label class="modal-form-lable">Почта</label>
+                        <label class="modal__form--label">Почта</label>
                     </div>
-                    <div class="input-group-absolute">
+                    <div class="input__group">
                         <input
                             type="email"
                             name="email"
-                            class="modal-form-input"/>
-                        <svg width="18" height="18" class="modal-icon">
+                            class="modal__form--input"/>
+                        <svg width="18" height="18" class="modal__icon">
                             <use
                                 href="./images/icons.svg#icon-email-black">
 									</use>
                         </svg>
                     </div>
-                    <div class="label-comment">
-                        <label class="modal-form-lable comment-area"
+                    <div class="label__comment">
+                        <label class="modal__form--label comment__area"
                             >Комментарий</label>
                     </div>
-                    <div class="form-text-area">
+                    <div class="form__text--area">
                         <textarea
                             name="comment"
                             placeholder="Введите текст"
-                            class="form-comment"></textarea>
+                            class="form__comment"></textarea>
                     </div>
 
-                    <label class="modal-checkbox checkbox-label">
+                    <label class="modal__checkbox checkbox__label">
                         <input
                             type="checkbox"
                             name="policy"
                             class="checkbox visually-hidden"/>
-                        <svg width="13" height="10" class="ticks-icon">
+                        <svg width="13" height="10" class="ticks__icon">
                             <use href="./images/icons.svg#icon-tick"></use>
                         </svg>
-                        <span class="icon-tick"></span>
+                        <span class="icon__tick"></span>
                         Соглашаюсь с рассылкой и принимаю&#160;
-                        <a href="#" class="checkbox-link"> Условия договора</a>
+                        <a href="#" class="checkbox__link"> Условия договора</a>
                     </label>
-                    <div class="button-submit">
-                        <button type="submit" class="primary-button">
+                    <div class="button__submit">
+                        <button type="submit" class="button">
                             Отправить
                         </button>
                     </div>
                 </form>
-                <button class="button-close" data-modal-close>
-                    <svg width="18" height="18" class="button-close-icon">
+                <button class="button__close" data-modal-close>
+                    <svg width="18" height="18" class="button__close--icon">
                         <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>

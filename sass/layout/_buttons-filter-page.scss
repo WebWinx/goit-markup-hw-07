@@ -1,14 +1,14 @@
 
-.button-exclude {
+.filter__button {
 	display: flex;
 	margin-bottom: 50px;
 	justify-content: center;
 }
-.button-item:not(:last-child) {
+.button__item:not(:last-child) {
 	margin-right: 8px;
 }
 
-.secondary-button {
+.filter__button {
 	display: inline-block;
 	color: $primary-text-color;
 	background-color: $bg-color-team;

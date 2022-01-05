@@ -1,5 +1,5 @@
 /*our-cusromers*/
-.cusromers-header {
+.cusromers__title {
 	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
@@ -8,14 +8,14 @@
 	letter-spacing: 0.03em;
 	color: $title-text-color;
 }
-.cusromers-list {
+.cusromers__list {
 	display: flex;
 }
-.cusromers-items:not(:last-child) {
+.cusromers__items:not(:last-child) {
 	margin-right: 30px;
 }
 
-.cusromers-link {
+.cusromers__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
