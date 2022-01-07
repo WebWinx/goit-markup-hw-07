@@ -3,22 +3,13 @@
 	align-items: center;
 	padding-top: 0;
 }
-.activity__item:not(:last-child) {
+.activity__list__item:not(:last-child) {
 	margin-right: 30px;
 }
-
-.section__title {
-	margin-bottom: 50px;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: $title-text-color;
-}
-.activity__thumb {
+.activity__list__thumb {
 	position: relative;
 }
-.activity__animation {
+.activity__list__animation {
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -40,12 +40,10 @@ header {
 	margin-right: 50px;
 }
 
-.current {
+.site-nav__link--current {
 	color: $accent-color;
-	transition: color $animation-duration  $animation-timing-function;
 	&::after {
 		content: '';
-		position: absolute;
 		display: block;
 		left: 0;
 		bottom: -1px;
@@ -53,6 +51,7 @@ header {
 		width: 100%;
 		background-color: $accent-color;
 		border-radius: 4px;
+		position: absolute;
 	}
 }
 .header-item:last-child {

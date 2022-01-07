@@ -1,20 +1,9 @@
-/*our-cusromers*/
-.cusromers__title {
-	margin-bottom: 50px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: $title-text-color;
-}
-.cusromers__list {
+.cusromers {
 	display: flex;
 }
-.cusromers__items:not(:last-child) {
+.cusromers__item:not(:last-child) {
 	margin-right: 30px;
 }
-
 .cusromers__link {
 	display: flex;
 	justify-content: center;
@@ -25,9 +14,9 @@
 	border-radius: 4px;
 	padding: 16px 0;
 	transition: fill $animation-duration $animation-timing-function,
-		 border $animation-duration $animation-timing-function;
-		 &:hover,
-		 &:focus {
+	border $animation-duration $animation-timing-function;
+	&:hover,
+	&:focus {
 	fill: $accent-color;
 	border: 1px solid $accent-color;
 }

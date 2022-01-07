@@ -47,7 +47,7 @@
 	margin-bottom: 10px;
 	display: block;
 }
-.modal__form--label {
+.label {
 	margin-top: 4px;
 	margin-bottom: 4px;
 	position: relative;
@@ -59,13 +59,13 @@
 	letter-spacing: 0.01em;
 	color: $color-text-description;
 }
-.input__group {
+.input__group--absolute {
 	position: relative;
 	height: 40px;
 	display: flex;
 	flex-direction: column;
 }
-.modal__form--input {
+.form--input {
 	padding: 11px 0px 11px 42px;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -158,12 +158,12 @@
 	text-decoration-line: underline;
 	color: $accent-color;
 }
-.button__submit {
+.flex-button .primary-button{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.button__close {
+.close-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;

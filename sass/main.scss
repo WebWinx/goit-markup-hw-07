@@ -1,21 +1,17 @@
 @import "./utils/variables";
-@import "./utils/visually-hidden";
 
-@import "./base/commons";
-@import "./base/container";
-
-@import "./components/button";
+@import "./components/common";
+@import "./components/section-title";
+@import "./components/buttons";
 @import "./components/logo";
 @import "./components/modal-window";
 @import "./components/section-title";
-@import "./components/footer-title";
-
-@import "./layout/header-page";
-@import "./layout/hero-page";
-@import "./layout/features-page";
-@import "./layout/actitvity-page";
-@import "./layout/team-page";
-@import "./layout/cusromers-page";
-@import "./layout/footer-page";
-@import "./layout/buttons-filter-page";
-@import "./layout/projects-page";
+@import ".//components/header-page";
+@import ".//components/hero-page";
+@import ".//components/features-page";
+@import ".//components/actitvity-page";
+@import ".//components/team-page";
+@import ".//components/cusromers-page";
+@import ".//components/footer-page";
+@import ".//components/buttons-filter-page";
+@import ".//components/projects-page";

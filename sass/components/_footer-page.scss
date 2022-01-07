@@ -1,0 +1,80 @@
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+.address__link--first {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: $text-color-on-dark;
+	&:hover,
+	&:focus {
+	color: $accent-color;
+}
+}
+.footer__section__container {
+	display: flex;
+	align-items: baseline;
+}
+.footer__section__contacts {
+	margin-right: 70px;
+}
+.address__link--second {
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	&:hover,
+	&:focus {
+	color: $accent-color;
+}
+}
+.footer__section__title {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $text-color-on-dark;
+}
+.address__link {
+	color: $bg-color-team;
+	transition: color $animation-duration $animation-timing-function;
+}
+
+.footer__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.socials__link--secondary-background {
+fill: $text-color-on-dark;
+background-color: $footer-social;
+}
+
+.footer__section__subscribe {
+	margin-left: auto;
+}
+.email-form__area {
+	display: flex;
+}
+.email-form__field {
+	padding: 15px 16px;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	& input::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+.email-icon{
+	margin-left: 10px;
+	fill: $text-color-on-dark;
+	width: 24px;
+	height: 24px;
+}
