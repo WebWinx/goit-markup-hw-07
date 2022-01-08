@@ -660,55 +660,60 @@
                 <h3 class="modal__title">
                     Оставьте свои данные, мы вам перезвоним
                 </h3>
-                <form action="#" class="modal__form">
+                <form action="#" class="form">
+						 <div class="input__group">
                     <div class="label">
-                        <label class="modal__form--label">Имя</label>
+                        <label class="label__item">Имя</label>
                     </div>
-                    <div class="input__group">
+                    <div class="input__group__absolute">
                         <input
                             type="text"
                             name="name"
-                            class="modal__form--input"/>
-                        <svg width="18" height="18" class="modal__icon">
+                            class="input__group__absolute--input"/>
+                        <svg width="18" height="18" class="input__group__absolute--icon">
                             <use
                                 href="./images/icons.svg#icon-person-black">
 									</use>
                         </svg>
                     </div>
+						</div>
+						<div class="input__group">
                     <div class="label">
-                        <label class="modal__form--label">Телефон</label>
+                        <label class="label__item">Телефон</label>
                     </div>
-                    <div class="input__group">
+                    <div class="input__group__absolute">
                         <input
                             type="tel"
                             name="phone_number"
-                            class="modal__form--input"/>
-                        <svg width="18" height="18" class="modal__icon">
+                            class="input__group__absolute--input"/>
+                        <svg width="18" height="18" class="input__group__absolute--icon">
                             <use
                                 href="./images/icons.svg#icon-phone-black">
 									</use>
                         </svg>
                     </div>
-
+						</div>
+						<div class="input__group">
                     <div class="label">
-                        <label class="modal__form--label">Почта</label>
+                        <label class="label__item">Почта</label>
                     </div>
-                    <div class="input__group">
+                    <div class="input__group__absolute">
                         <input
                             type="email"
                             name="email"
-                            class="modal__form--input"/>
-                        <svg width="18" height="18" class="modal__icon">
+                            class="input__group__absolute--input"/>
+                        <svg width="18" height="18" class="input__group__absolute--icon">
                             <use
                                 href="./images/icons.svg#icon-email-black">
 									</use>
                         </svg>
                     </div>
-                    <div class="label__comment">
-                        <label class="modal__form--label comment__area"
+						</div>
+                    <div class="label">
+                        <label class="label__item"
                             >Комментарий</label>
                     </div>
-                    <div class="form__text--area">
+                    <div class="form__text-area">
                         <textarea
                             name="comment"
                             placeholder="Введите текст"
@@ -728,7 +733,7 @@
                         <a href="#" class="checkbox__link"> Условия договора</a>
                     </label>
                     <div class="button">
-                        <button type="submit" class="primary__button__flex">
+                        <button type="submit" class="primary__button primary__button__flex">
                             Отправить
                         </button>
                     </div>
