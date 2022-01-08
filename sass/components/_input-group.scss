@@ -1,0 +1,51 @@
+.input__group {
+	margin-bottom: 10px;
+}
+.label {
+	margin-bottom: 4px;
+	display: block;
+}
+.label__item {
+	margin-bottom: 4px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.167;
+	letter-spacing: 0.01em;
+	color: $color-text-description;
+}
+.input__group__absolute {
+	position: relative;
+	height: 40px;
+	width: 100%;
+	flex-direction: column;
+}
+.input__group__absolute--input {
+	padding: 11px 0px 11px 42px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition: border $animation-duration
+	$animation-timing-function;
+	.input__group__absolute:focus-within > & {
+		outline: none;
+		border-color: $accent-color;
+	}
+}
+.input__group__absolute--icon {
+	position: absolute;
+	display: inline-block;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	fill: $primary-text-color;
+	transition: fill $animation-duration $animation-timing-function;
+	.input__group__absolute:focus-within > & {
+		outline: none;
+		fill: $accent-color;
+	}
+}
