@@ -1,7 +1,7 @@
 @import "./utils/variables";
 
 @import "./components/common";
-@import "./components/section-title";
+@import "./components/section";
 @import "./components/buttons";
 @import "./components/logo";
 @import "./components/modal-window";
@@ -13,11 +13,13 @@
 @import ".//components/team-list";
 @import ".//components/cusromers";
 @import ".//components/footer";
-@import ".//components/buttons-filter";
+@import ".//components/filter-list";
 @import ".//components/projects";
 @import ".//components/socials";
 @import ".//components/site-nav";
-@import ".//components/contacts-header";
+@import ".//components/contacts";
 @import ".//components/checkbox";
-@import ".//components/form-comment";
+@import ".//components/textarea";
 @import ".//components/input-group";
+@import ".//components/subscribe";
+@import ".//components/label";

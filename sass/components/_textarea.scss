@@ -1,9 +1,9 @@
-.form__text-area {
+.textarea-group {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
 }
-.form__comment {
+.textarea-group__input{
 	padding: 12px 16px;
 	margin-top: 4px;
 	height: 120px;

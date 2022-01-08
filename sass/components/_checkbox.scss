@@ -1,4 +1,4 @@
-.checkbox__label {
+.checkbox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -8,7 +8,7 @@
 	letter-spacing: 0.03em;
 	color: $color-text-description;
 }
-.ticks__icon {
+.checkbox__icon {
 	display: flex;
 	margin-right: 8px;
 	width: 16px;

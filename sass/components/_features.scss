@@ -1,18 +1,18 @@
 .features {
 	padding-bottom: 0;
 }
-.features__list {
+.features-list {
 	display: flex;
 }
 
-.features__list__item {
+.features-list__item {
 	width: 270px;
 	&:not(:last-child) {
 		margin-right: 30px;
 	}
 }
 
-.features__list__title {
+.features-list__title {
 	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 1.14;
@@ -20,13 +20,13 @@
 	text-transform: uppercase;
 	color: $title-text-color;
 }
-.features__list__description {
+.features-list__description {
 	color: $color-text-description;
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	line-height: 1.7;
 }
-.features__list__image {
+.features-list__image {
 	display: flex;
 	justify-content: center;
 	align-items: center;

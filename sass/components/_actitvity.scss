@@ -1,15 +1,15 @@
-.activity__list {
+.activity-list {
 	display: flex;
 	align-items: center;
 	padding-top: 0;
 }
-.activity__list__item:not(:last-child) {
+.activity-list__item:not(:last-child) {
 	margin-right: 30px;
 }
-.activity__list__thumb {
+.activity-list__thumb {
 	position: relative;
 }
-.activity__list__animation {
+.activity-list__animation {
 	display: flex;
 	justify-content: center;
 	align-items: center;
